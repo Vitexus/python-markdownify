@@ -1,0 +1,5 @@
+python-markdownify (1.2.3-1) UNRELEASED; urgency=low
+
+  * Initial Debian packaging
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Tue, 07 Jul 2026 23:51:52 +0200

@@ -1,0 +1,28 @@
+Source: python-markdownify
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.7.0
+Homepage: http://github.com/matthewwithanm/python-markdownify
+Vcs-Git: https://github.com/Vitexus/python-markdownify.git
+Vcs-Browser: https://github.com/Vitexus/python-markdownify
+Rules-Requires-Root: no
+
+Package: python3-markdownify
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-bs4,
+ python3-six,
+Description: convert HTML to Markdown (Python 3)
+ markdownify is a Python library that converts HTML documents into
+ Markdown-formatted text. It uses BeautifulSoup to parse HTML and
+ supports customizable conversion options such as heading style,
+ bullet formatting, and stripping or keeping specific tags.

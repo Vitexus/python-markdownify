@@ -8,7 +8,8 @@ String[] distributions = [
 			// 'debian:forky', // Disabled: Forky is still unstable/research-only.
 			//                 // The full Debian package ecosystem is not yet available for Forky.
 			//                 // Re-enable once the stack builds cleanly for Forky.
-			'ubuntu:jammy',
+			// 'ubuntu:jammy', // Disabled: jammy ships setuptools 59.6, which ignores the PEP 621
+			//                 // [project] table (needs >= 61) and builds an UNKNOWN-0.0.0 wheel.
 			'ubuntu:noble',
 			'ubuntu:resolute',
 ]
